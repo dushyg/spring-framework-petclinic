@@ -12,10 +12,10 @@ variables:
   azureSubscription: '5bdfb9ba-4d91-43ca-9afd-f1add26d6691'
   
   # Web app name
-  webAppName: 'my-app-name'
+  webAppName: 'dushyg-spring-framework-petclinic'
 
   # Environment name
-  environmentName: 'my-app-name'
+  environmentName: 'dushyg-spring-framework-petclinic'
   
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
@@ -60,7 +60,7 @@ stages:
         deploy:
           steps:
           - task: AzureWebApp@1
-            displayName: 'Azure Web App Deploy: my-app-name'
+            displayName: 'Azure Web App Deploy: dushyg-spring-framework-petclinic'
             inputs:
               azureSubscription: $(azureSubscription)
               appType: webAppLinux
